@@ -49,7 +49,7 @@ if len(files) == 0:
     raise Exception(f"No files found at {inp_dir}")
 
 # Load corresponding model architecture and weights
-load_file = run_path(os.path.join(task, "MPRNet.py"))
+load_file = run_path(os.path.join(task, "/Deblurring/MPRNet.py"))
 model = load_file['MPRNet']()
 model.cuda()
 
