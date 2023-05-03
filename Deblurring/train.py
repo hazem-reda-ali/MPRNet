@@ -1,6 +1,6 @@
 import os
 from config import Config 
-opt = Config('training.yml')
+opt = Config('content/MPRNet/Deblurring/training.yml')
 
 gpus = ','.join([str(i) for i in opt.GPU])
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
