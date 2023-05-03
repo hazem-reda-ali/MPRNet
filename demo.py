@@ -53,7 +53,7 @@ load_file = run_path(os.path.join(task, "/content/MPRNet/Deblurring/MPRNet.py/")
 model = load_file['MPRNet']()
 model.cuda()
 
-weights = os.path.join(task, "/content/MPRNet/Deblurring/MPRNet.py/pretrained_models", "model_"+task.lower()+".pth")
+weights = os.path.join(task, "/content/MPRNet/Deblurring/pretrained_models", "model_"+task.lower()+".pth")
 load_checkpoint(model, weights)
 model.eval()
 
